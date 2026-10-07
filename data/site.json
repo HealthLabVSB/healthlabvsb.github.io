@@ -1,0 +1,41 @@
+{
+  "name": "Health Lab VSB - TU Ostrava",
+  "org": "HealthLabVSB",
+  "tagline": "Open code and data from biomedical engineering research",
+  "intro": "We develop methods and open tools for non-contact and wearable monitoring of human physiology — from mmWave radar vital-sign sensing to biosignal analysis and medical image processing.",
+  "affiliation": "Department of Cybernetics and Biomedical Engineering, Faculty of Electrical Engineering and Computer Science, VSB – Technical University of Ostrava, Czech Republic",
+  "links": {
+    "website": "https://www.fei.vsb.cz/bme/en",
+    "linkedin": "https://www.linkedin.com/company/98975653/",
+    "facebook": "https://www.facebook.com/bmevsb",
+    "email": "bme@vsb.cz",
+    "github": "https://github.com/HealthLabVSB"
+  },
+  "funding": "",
+  "areas": [
+    {
+      "id": "radar",
+      "name": "Radar sensing",
+      "description": "Contactless measurement of respiration, heart rate and activity with TI mmWave radars.",
+      "topic": "radar"
+    },
+    {
+      "id": "biosignals",
+      "name": "Biosignals & stress",
+      "description": "EEG, fNIRS, GSR and HR/HRV during meditation, relaxation and stress.",
+      "topic": "biosignals"
+    },
+    {
+      "id": "blood-pressure",
+      "name": "Blood pressure",
+      "description": "Validation of non-invasive blood-pressure measurement in clinical practice.",
+      "topic": "blood-pressure"
+    },
+    {
+      "id": "medical-imaging",
+      "name": "Medical imaging",
+      "description": "Retinal vessel segmentation and diagnosis support for retinopathy of prematurity.",
+      "topic": "medical-imaging"
+    }
+  ]
+}
