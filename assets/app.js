@@ -201,7 +201,7 @@
     try {
       const r = await fetch(`https://api.github.com/orgs/${site.org}/repos?type=public&per_page=100&sort=pushed`, { headers: { Accept: "application/vnd.github+json" } });
       if (!r.ok) throw new Error(r.status);
-      repos = (await r.json()).filter(x => !x.archived && !x.fork);
+      repos = (await r.json()).filter(x => !x.archived);
     } catch (e) {
       repos = FALLBACK_REPOS; live = false;
     }
