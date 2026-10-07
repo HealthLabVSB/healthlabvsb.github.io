@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Health Lab VSB - TU Ostrava · Code &amp; Data</title>
+  <meta name="description" content="Open code and data from Health Lab VSB - TU Ostrava, Department of Cybernetics and Biomedical Engineering, VSB – Technical University of Ostrava.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="#top" aria-label="Health Lab VSB home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-name" data-bind="name">Health Lab VSB - TU Ostrava</span>
+      </a>
+      <nav class="nav" aria-label="Sections">
+        <a href="#areas">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#repositories">Repositories</a>
+        <a href="#cite">How to cite</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9Z"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="wrap">
+        <p class="eyebrow">Code &amp; Data</p>
+        <h1><span data-bind="name">Health Lab VSB - TU Ostrava</span> <span class="hero-sub">Department of Cybernetics and Biomedical Engineering</span></h1>
+        <p class="lead" data-bind="intro"></p>
+        <div class="hero-links" id="hero-links"></div>
+        <dl class="stats" id="stats"></dl>
+      </div>
+    </section>
+
+    <div class="wrap">
+      <aside class="callout" aria-label="Note for readers of our papers">
+        <strong>Came here from a paper?</strong>
+        Find it below — each entry links to the exact code and data used, with a ready-made citation.
+      </aside>
+    </div>
+
+    <section class="section" id="areas" aria-labelledby="areas-h">
+      <div class="wrap">
+        <h2 id="areas-h">Research areas</h2>
+        <div class="areas" id="area-grid"></div>
+      </div>
+    </section>
+
+    <section class="section alt" id="publications" aria-labelledby="pubs-h">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="pubs-h">Publications with code &amp; data</h2>
+          <label class="search">
+            <span class="visually-hidden">Search publications</span>
+            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M10 3a7 7 0 1 0 4.2 12.6l5.1 5.1 1.4-1.4-5.1-5.1A7 7 0 0 0 10 3Zm0 2a5 5 0 1 1 0 10 5 5 0 0 1 0-10Z"/></svg>
+            <input id="pub-search" type="search" placeholder="Search title or author">
+          </label>
+        </div>
+        <div class="filters" role="group" aria-label="Filter publications">
+          <div class="chips" id="area-chips"></div>
+          <div class="chips" id="type-chips"></div>
+        </div>
+        <ol class="pubs" id="pub-list" aria-live="polite"></ol>
+        <p class="empty" id="pub-empty" hidden>No publications match your filters.</p>
+      </div>
+    </section>
+
+    <section class="section" id="repositories" aria-labelledby="repos-h">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="repos-h">Public repositories</h2>
+          <a class="text-link" data-href="github" href="https://github.com/HealthLabVSB">All on GitHub →</a>
+        </div>
+        <p class="muted small" id="repo-status">Loading repositories from GitHub…</p>
+        <div class="repos" id="repo-grid"></div>
+      </div>
+    </section>
+
+    <section class="section alt" id="cite" aria-labelledby="cite-h">
+      <div class="wrap narrow">
+        <h2 id="cite-h">How to cite</h2>
+        <ol class="steps">
+          <li><strong>Cite the publication</strong> listed above — use the <em>BibTeX</em> button next to it.</li>
+          <li><strong>For datasets</strong>, cite the Zenodo DOI so the exact version is preserved.</li>
+          <li><strong>For software</strong>, open the repository and click <em>Cite this repository</em> in the right sidebar.</li>
+        </ol>
+        <p class="note">Code is released for research purposes only and is <strong>not a medical device</strong>. Human-subject data are anonymised and were collected with ethics committee approval; see each repository for details and licence.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <div>
+        <p class="footer-name" data-bind="name">Health Lab VSB - TU Ostrava</p>
+        <p class="muted small" data-bind="affiliation"></p>
+        <p class="muted small" id="funding"></p>
+      </div>
+      <div class="footer-links" id="footer-links"></div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
