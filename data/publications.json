@@ -1,0 +1,76 @@
+[
+  {
+    "id": "kauzlaricova2026bp",
+    "type": "article",
+    "area": "blood-pressure",
+    "title": "A dataset of paired auscultatory and oscillometric blood pressure measurements from routine clinical practice",
+    "authors": ["Kauzlaričová, Terezie", "Provazník, Valentýna", "Mahrová, Vendula", "Jurek, František", "Augustynek, Martin"],
+    "venue": "Scientific Data",
+    "year": 2026,
+    "doi": "10.1038/s41597-026-07843-7",
+    "code": "https://github.com/HealthLabVSB/osc-aus-bp-validation"
+  },
+  {
+    "id": "kauzlaricova2026meditation",
+    "type": "dataset",
+    "area": "biosignals",
+    "title": "Physiological Signal Dataset on Meditation-Induced Relaxation: GSR, HR, and HRV Measurements in Controlled and Home Environments",
+    "authors": ["Kauzlaricova, Terezie", "Kubicek, Jan", "Augustynek, Martin", "Szalbotova, Eliska", "Oczka, David", "Hrncirova, Tereza", "Malcik, Martin", "Tomaszek, Lukas", "Zemcik, Tomas"],
+    "venue": "Zenodo",
+    "year": 2026,
+    "doi": "10.5281/zenodo.21490601",
+    "code": "https://github.com/HealthLabVSB/physiological-signal-dataset-on-meditation-induced-relaxation",
+    "related": {
+      "label": "Bahrova et al., IEEE Transactions on Affective Computing (2026)",
+      "doi": "10.1109/TAFFC.2026.3682324"
+    }
+  },
+  {
+    "id": "hrncirova2025sync",
+    "type": "dataset",
+    "area": "biosignals",
+    "title": "Synchronized multimodal dataset for central–autonomic coupling in meditation and rest",
+    "authors": ["Hrncirova, Tereza", "Augustynek, Martin", "Kubicek, Jan", "Knocikova, Juliana Alexandra", "Bahrova, Jana", "Zemcik, Tomas", "Malcik, Martin"],
+    "venue": "Zenodo",
+    "year": 2025,
+    "doi": "10.5281/zenodo.17735691",
+    "code": "https://github.com/HealthLabVSB/Synchronized-multimodal-dataset-for-central-autonomic-coupling-in-meditation-and-rest"
+  },
+  {
+    "id": "varysova2025tortuosity",
+    "type": "article",
+    "area": "medical-imaging",
+    "title": "Modeling and Recognition of Retinal Blood Vessels Tortuosity in ROP Plus Disease: A Hybrid Segmentation–Classification Scheme",
+    "authors": ["Varysova, Alice", "Kubicek, Jan", "Penhaker, Marek", "Augustynek, Martin", "Oczka, David", "Marsolkova, Kristyna", "Timkovic, Juraj"],
+    "venue": "International Journal of Intelligent Systems",
+    "volume": "2025",
+    "number": "6688133",
+    "year": 2025,
+    "doi": "10.1155/int/6688133",
+    "code": "https://github.com/HealthLabVSB/segmentation-classification-algorithm"
+  },
+  {
+    "id": "barvik2025dartscope",
+    "type": "software",
+    "area": "radar",
+    "title": "DARTscope: tools for inspecting, processing and visualising TI mmWave radar data",
+    "authors": ["Barvík, Daniel", "Hrubý, Dan"],
+    "venue": "GitHub",
+    "version": "1.0",
+    "year": 2025,
+    "code": "https://github.com/HealthLabVSB/DARTscope"
+  },
+  {
+    "id": "almeida2024rop",
+    "type": "article",
+    "area": "medical-imaging",
+    "title": "Enhancing ROP plus form diagnosis: An automatic blood vessel segmentation approach for newborn fundus images",
+    "authors": ["Almeida, José", "Kubicek, Jan", "Penhaker, Marek", "Cerny, Martin", "Augustynek, Martin", "Varysova, Alice", "Bansal, Avinash", "Timkovic, Juraj"],
+    "venue": "Results in Engineering",
+    "volume": "24",
+    "number": "103054",
+    "year": 2024,
+    "doi": "10.1016/j.rineng.2024.103054",
+    "code": "https://github.com/HealthLabVSB/automatic-blood-vessel-segmentation-approach-for-newborn-fundus-images"
+  }
+]
