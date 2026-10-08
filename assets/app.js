@@ -60,19 +60,22 @@
   };
 
   function bibtex(p) {
-    const kind = p.type === "article" ? "article" : p.type === "dataset" ? "dataset" : "software";
+    // Classic BibTeX types only (@article, @misc) so every journal template accepts it.
+    const isArticle = p.type === "article";
+    const note = p.type === "dataset" ? "Dataset"
+      : p.type === "software" ? "Software" + (p.version ? `, version ${p.version}` : "") : null;
     const f = [
       ["title", `{${p.title}}`],
       ["author", p.authors.join(" and ")],
-      [p.type === "article" ? "journal" : "publisher", p.venue],
+      isArticle ? ["journal", p.venue] : ["howpublished", p.venue],
       ["year", p.year],
       ["volume", p.volume],
       ["number", p.number],
-      ["version", p.version],
+      ["note", note],
       ["doi", p.doi],
       ["url", p.doi ? `https://doi.org/${p.doi}` : p.code]
     ].filter(([, v]) => v != null && v !== "");
-    return `@${kind}{${p.id},\n` + f.map(([k, v]) => `  ${k.padEnd(9)}= {${v}}`).join(",\n") + "\n}";
+    return `@${isArticle ? "article" : "misc"}{${p.id},\n` + f.map(([k, v]) => `  ${k.padEnd(13)}= {${v}}`).join(",\n") + "\n}";
   }
 
   let toastTimer;
@@ -90,6 +93,12 @@
       const v = site[el.dataset.bind];
       if (v) el.textContent = v;
     });
+    // Keep the name readable when it wraps: break only between its two parts.
+    const h1Name = $(".hero h1 [data-bind=name]");
+    if (h1Name && site.name.includes(" - ")) {
+      const [a, b] = site.name.split(" - ");
+      h1Name.replaceChildren(h("span", { class: "nowrap" }, a), " ", h("span", { class: "nowrap" }, "- " + b));
+    }
     const L = site.links || {};
     const link = (label, url, primary) => url
       ? h("a", { class: "btn" + (primary ? " primary" : ""), href: url, target: url.startsWith("mailto") ? null : "_blank", rel: "noopener" }, label)
