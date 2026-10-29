@@ -56,8 +56,8 @@
     "title": "DARTscope: tools for inspecting, processing and visualising TI mmWave radar data",
     "authors": ["Barvik, Daniel", "Hruby, Dan"],
     "venue": "GitHub",
-    "version": "1.0",
-    "year": 2025,
+    "version": "2.0",
+    "year": 2026,
     "code": "https://github.com/HealthLabVSB/DARTscope"
   },
   {
